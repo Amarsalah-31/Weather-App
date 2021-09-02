@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* Général */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Source Sans Pro";
+  padding: 50px;
+}
+@font-face {
+  font-family: "Source Sans Pro", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+}
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Ubuntu&display=swap");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Margins */
+.ms-10 {
+  margin-left: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.p-20 {
+  padding: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.m-10 {
+  margin: 10px;
+}
+.mb-100 {
+  margin-bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Flex */
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.justifyCenter {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Navbar */
+.navWrapper {
+  list-style-type: none;
+  background-color: rgb(237, 235, 235);
+}
+.navLink {
+  text-decoration: none;
+  color: salmon;
+}
+.navLink:hover {
+  font-weight: bolder;
+}
+
+/* Page title */
+.title {
+  font-family: "Ubuntu", sans-serif;
+  color: lightgoldenrodyellow;
+}
+.defaultTitle {
+  color: sandybrown;
+}
+
+/* Input + Button */
+.border {
+  border-radius: 3px;
+  border: 0.5px solid rgb(237, 235, 235);
+  padding: 10px;
+}
+.btn {
+  margin: 10px;
+}
+.btn:hover {
+  font-weight: bolder;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(237, 235, 235);
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* CityCard */
+.cityCard {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 50px 0 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  border: 0.5px solid rgb(237, 235, 235);
+  width: 30%;
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
 }
